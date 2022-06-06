@@ -1,13 +1,29 @@
+# Billed!
+
+Neuvième projet du parcours "Développeur Front-End" chez OpenClassroom. L'objectif est de finaliser une application de gestion de notes de frais, pour une mise en production rapide. Il faut débugger les différents parcours utilisateurs et assurer un ensemble de tests automatisés (Unit-Tests && Intégration Tests), ainsi qu'un plan de tests End-to-End.
+
+## Objectifs
+
+1. Debugger les différents parcours utilisateurs.
+2. Mise en place de tests unitaires et tests d'intégration.
+3. Préparation d'un plan de tests End-to-End.
+
+## Technologies
+
+HTML5 / CSS3 / JS Vanilla / Jest
 
 ## L'architecture du projet :
-Ce projet, dit frontend, est connecté à un service API backend que vous devez aussi lancer en local.
+
+Ce projet, dit frontend, est connecté à un service API backend.
 
 Le projet backend se trouve ici: https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-back
 
 ## Organiser son espace de travail :
+
 Pour une bonne organization, vous pouvez créer un dossier bill-app dans lequel vous allez cloner le projet backend et par la suite, le projet frontend:
 
 Clonez le projet backend dans le dossier bill-app :
+
 ```
 $ git clone https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-Back.git
 ```
@@ -18,6 +34,7 @@ bill-app/
 ```
 
 Clonez le projet frontend dans le dossier bill-app :
+
 ```
 $ git clone https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-Front.git
 ```
@@ -37,27 +54,30 @@ Suivez les indications dans le README du projet backend.
 ### étape 2 - Lancer le frontend :
 
 Allez au repo cloné :
+
 ```
 $ cd Billed-app-FR-Front
 ```
 
 Installez les packages npm (décrits dans `package.json`) :
+
 ```
 $ npm install
 ```
 
 Installez live-server pour lancer un serveur local :
+
 ```
 $ npm install -g live-server
 ```
 
 Lancez l'application :
+
 ```
 $ live-server
 ```
 
 Puis allez à l'adresse : `http://127.0.0.1:8080/`
-
 
 ## Comment lancer tous les tests en local avec Jest ?
 
@@ -82,12 +102,15 @@ $jest src/__tests__/your_test_file.js
 
 Vous pouvez vous connecter en utilisant les comptes:
 
-### administrateur : 
+### administrateur :
+
 ```
-utilisateur : admin@test.tld 
+utilisateur : admin@test.tld
 mot de passe : admin
 ```
+
 ### employé :
+
 ```
 utilisateur : employee@test.tld
 mot de passe : employee
