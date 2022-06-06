@@ -1,6 +1,6 @@
 # Billed!
 
-Neuvième projet du parcours "Développeur Front-End" chez OpenClassroom. L'objectif est de finaliser une application de gestion de notes de frais, pour une mise en production rapide. Il faut débugger les différents parcours utilisateurs et assurer un ensemble de tests automatisés (Unit-Tests && Intégration Tests), ainsi qu'un plan de tests End-to-End.
+Neuvième projet du parcours "Développeur Front-End" chez OpenClassroom. L'objectif est de finaliser une application de gestion de notes de frais, pour une mise en production rapide. Il faut débugger les différents parcours utilisateurs et assurer un ensemble de tests automatisés (Unit-Tests && Integration Tests), ainsi qu'un plan de tests End-to-End.
 
 ## Objectifs
 
