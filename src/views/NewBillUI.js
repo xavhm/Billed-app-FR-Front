@@ -8,7 +8,7 @@ export default () => {
         <div class='content-header'>
           <div class='content-title'> Envoyer une note de frais </div>
         </div>
-        <div class="form-newbill-container content-inner">
+        <div data-testId = "form-newbill-container" class="form-newbill-container content-inner">
           <form data-testid="form-new-bill">
             <div class="row">
                 <div class="col-md-6">
@@ -54,7 +54,10 @@ export default () => {
                   </div>
                   <div class="col-half">
                     <label for="file" class="bold-label">Justificatif</label>
-                    <input required type="file" class="form-control blue-border" accept="image/png, image/jpeg, image/jpg" data-testid="file" />
+                    <input required id="file" type="file" class="form-control blue-border" accept="image/png, image/jpeg, image/jpg" data-testid="file" />
+                    <div class="errorFileContainer">
+                      <div data-testid = "error-file" data-error-file class="errorFile"></div>
+                    </div>
                   </div>
                 </div>
             </div>

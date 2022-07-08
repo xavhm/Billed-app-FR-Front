@@ -67,7 +67,7 @@ export default ({ data: bills, loading, error }) => {
               <tr>
                 <th>Type</th>
                 <th>Nom</th>
-                <th>Date</th>
+                <th data-testid="billDate">Date</th>
                 <th>Montant</th>
                 <th>Statut</th>
                 <th>Actions</th>
