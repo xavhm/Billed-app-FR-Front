@@ -79,7 +79,7 @@ export default class {
 
   handleClickIconEye = () => {
     const billUrl = $("#icon-eye-d").attr("data-bill-url");
-    // console.log(billUrl);
+    console.log(billUrl);
     // const imgWidth = Math.floor($("#modaleFileAdmin1").width() * 0.8);
     $("#modaleFileAdmin1")
       .find(".modal-body")
@@ -183,8 +183,8 @@ export default class {
       return this.store
         .bills()
         .update({ data: JSON.stringify(bill), selector: bill.id })
-        .then((bill) => bill);
-      // .catch(console.log);
+        .then((bill) => bill)
+        .catch(console.log);
     }
   };
 }
