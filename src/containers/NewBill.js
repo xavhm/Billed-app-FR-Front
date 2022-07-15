@@ -20,14 +20,14 @@ export default class NewBill {
     const file = this.document.querySelector(`input[data-testid="file"]`).files[0];
     if (!["image/png", "image/jpg", "image/jpeg"].includes(file.type)) {
       this.document.querySelector(`input[data-testid="file"]`).value = "";
-      console.log("Invalid file format!");
+      // console.log("Invalid file format!");
       return;
     }
     const filePath = e.target.value.split(/\\/g);
     const fileName = filePath[filePath.length - 1];
-    console.log("file", file.type);
-    console.log("filePath", filePath);
-    console.log("fileName", fileName);
+    // console.log("file", file.type);
+    // console.log("filePath", filePath);
+    // console.log("fileName", fileName);
     const formData = new FormData();
     const email = JSON.parse(localStorage.getItem("user")).email;
     formData.append("file", file);
@@ -42,19 +42,19 @@ export default class NewBill {
         },
       })
       .then(({ fileUrl, key }) => {
-        console.log(fileUrl);
+        // console.log(fileUrl);
         this.billId = key;
         this.fileUrl = fileUrl;
         this.fileName = fileName;
-      })
-      .catch((error) => console.error(error));
+      });
+    // .catch((error) => console.error(error));
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(
-      'e.target.querySelector(`input[data-testid="datepicker"]`).value',
-      e.target.querySelector(`input[data-testid="datepicker"]`).value
-    );
+    // console.log(
+    //   'e.target.querySelector(`input[data-testid="datepicker"]`).value',
+    //   e.target.querySelector(`input[data-testid="datepicker"]`).value
+    // );
     const email = JSON.parse(localStorage.getItem("user")).email;
     const bill = {
       email,
@@ -81,8 +81,8 @@ export default class NewBill {
         .update({ data: JSON.stringify(bill), selector: this.billId })
         .then(() => {
           this.onNavigate(ROUTES_PATH["Bills"]);
-        })
-        .catch((error) => console.error(error));
+        });
+      // .catch((error) => console.error(error));
     }
   };
 }
